@@ -100,9 +100,6 @@ class MHB_Backup
             ini_set('max_execution_time', 1000);
             ini_set('memory_limit', '1024M');
 
-            phpinfo();
-            exit();
-
             $zip = new ZipArchive();
             $zip->open($this->zipFileName, ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
